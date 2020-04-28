@@ -110,6 +110,15 @@
     "knplabs/knp-menu-bundle": {
         "version": "v2.2.1"
     },
+    "laminas/laminas-code": {
+        "version": "3.4.1"
+    },
+    "laminas/laminas-eventmanager": {
+        "version": "3.2.1"
+    },
+    "laminas/laminas-zendframework-bridge": {
+        "version": "1.0.3"
+    },
     "monolog/monolog": {
         "version": "1.23.0"
     },
@@ -123,7 +132,7 @@
         "version": "v2.0.17"
     },
     "php": {
-        "version": "7.2"
+        "version": "7.4"
     },
     "php-cs-fixer/diff": {
         "version": "v1.3.0"
@@ -132,6 +141,9 @@
         "version": "1.0.1"
     },
     "psr/container": {
+        "version": "1.0.0"
+    },
+    "psr/event-dispatcher": {
         "version": "1.0.0"
     },
     "psr/log": {
@@ -400,6 +412,9 @@
     },
     "twig/twig": {
         "version": "v2.4.8"
+    },
+    "webimpress/safe-writer": {
+        "version": "2.0.1"
     },
     "zendframework/zend-code": {
         "version": "3.3.0"
