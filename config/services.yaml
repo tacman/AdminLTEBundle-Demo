@@ -30,3 +30,12 @@ services:
 
     App\EventSubscriber\RedirectToLocaleSubscriber:
         arguments: ['@router', '%app_locales%', '%locale%']
+
+    app.menu_builder:
+        class: App\Menu\MenuBuilder
+        arguments:
+            - "@knp_menu.factory"
+            - "@security.authorization_checker"
+            - "@security.token_storage"
+        tags:
+            - { name: knp_menu.menu_builder, method: createAdminMenu, alias: admin_menu }

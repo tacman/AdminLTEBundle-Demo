@@ -95,12 +95,16 @@ class KnpMenuBuilderSubscriber implements EventSubscriberInterface
         if ($this->security->isGranted('IS_AUTHENTICATED_REMEMBERED')) {
             $menu->addChild(
                 'logout',
-                ['route' => 'fos_user_security_logout', 'label' => 'menu.logout', 'childOptions' => $event->getChildOptions()]
+                ['route' => 'app_logout', 'label' => 'menu.logout', 'childOptions' => $event->getChildOptions()]
             )->setLabelAttribute('icon', 'fas fa-sign-out-alt');
         } else {
             $menu->addChild(
                 'login',
-                ['route' => 'fos_user_security_login', 'label' => 'menu.login', 'childOptions' => $event->getChildOptions()]
+                ['route' => 'app_login', 'label' => 'menu.login', 'childOptions' => $event->getChildOptions()]
+            )->setLabelAttribute('icon', 'fas fa-sign-in-alt');
+            $menu->addChild(
+                'register',
+                ['route' => 'app_register', 'label' => 'menu.register', 'childOptions' => $event->getChildOptions()]
             )->setLabelAttribute('icon', 'fas fa-sign-in-alt');
         }
     }

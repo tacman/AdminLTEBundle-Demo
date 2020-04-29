@@ -2,10 +2,14 @@ var Encore = require('@symfony/webpack-encore');
 
 Encore
 // the project directory where compiled assets will be stored
-    .setOutputPath('public/bundles/adminlte/')
+    // .setOutputPath('public/bundles/adminlte/')
 
     // the public path used by the web server to access the previous directory
-    .setPublicPath('/bundles/adminlte/')
+    // .setPublicPath('/bundles/adminlte/')
+    // directory where compiled assets will be stored
+    .setOutputPath('public/build/')
+    // public path used by the web server to access the output path
+    .setPublicPath('/build')
 
     // delete old files before creating them
     .cleanupOutputBeforeBuild()
@@ -18,9 +22,6 @@ Encore
 
     // generate only two files: app.js and app.css
     .addEntry('adminlte', './assets/adminlte-demo.js')
-
-    // enable sass/scss parser
-    .enableSassLoader()
 
     // show OS notifications when builds finish/fail
     .enableBuildNotifications()

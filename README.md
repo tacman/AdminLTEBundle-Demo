@@ -1,6 +1,6 @@
 # AdminLTE-Bundle Demo
 
-This repository contains an example Symfony 4 application for the [AdminLTE-Bundle](https://github.com/kevinpapst/AdminLTEBundle).
+This repository contains an example Symfony 4 and Symfony 5 application for the [AdminLTE-Bundle](https://github.com/kevinpapst/AdminLTEBundle).
 
 It serves as a living documentation for first time users and easier testing of theme features.
 
@@ -9,29 +9,32 @@ Please read the [theme documentation](https://github.com/kevinpapst/AdminLTEBund
 
 # Installation
 
-Simple as that:
+Symfony 4:
 
 ```bash
-composer create-project kevinpapst/adminlte-bundle-demo
+composer create-project kevinpapst/adminlte-bundle-demo 
 ```
 
-Now spin up the PHP built-in webserver and enjoy the demo:
+Symfony 5:
 
 ```bash
-cd adminlte-bundle-demo
-bin/console server:run
+composer create-project tacman/adminlte-bundle-demo 
+cd tacman/adminlte-bundle-demo 
+git checkout symfony5
+composer install && yarn install && yarn run encore dev
+```
+
+Use the Symfony CLI to run a test server and to compile the assets in the background. Watch the assets in the background if you're going to change them.
+
+```bash
+symfony server:start -d 
+symfony run -d yarn run encore dev --watch
 ```
 
 and see it running at [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ## Frontend assets
 
-If you want to re-compile the frontend assets execute:
-
-```
-yarn install
-npm run build
-```
 
 ## Testing different languages
 
