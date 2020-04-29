@@ -18,8 +18,8 @@ composer create-project kevinpapst/adminlte-bundle-demo
 Symfony 5:
 
 ```bash
-composer create-project tacman/adminlte-bundle-demo 
-cd tacman/adminlte-bundle-demo 
+git clone https://github.com/tacman/AdminLTEBundle-Demo.git
+cd AdminLTEBundle-Demo
 git checkout symfony5
 composer install && yarn install && yarn run encore dev
 ```
