@@ -67,11 +67,13 @@
         ]
     },
     "conflict": {
-        "symfony/symfony": "*"
+        "symfony/symfony": "5.1"
     },
     "extra": {
         "symfony": {
             "allow-contrib": true
         }
-    }
+    },
+    "minimum-stability": "beta",
+    "prefer-stable": false
 }
