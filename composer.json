@@ -8,6 +8,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "doctrine/annotations": "^1.10",
+        "kevinpapst/adminlte-bundle": "^3",
         "knplabs/knp-menu-bundle": "^3.0",
         "sensio/framework-extra-bundle": "^5.2",
         "symfony/asset": "^5.0",
@@ -22,7 +23,7 @@
         "symfony/translation": "^5.0",
         "symfony/twig-bundle": "^5.0",
         "symfony/validator": "^5.0",
-        "symfony/webpack-encore-pack": "^1.0",
+        "symfony/webpack-encore-bundle": "^1.0",
         "symfony/yaml": "^5.0"
     },
     "require-dev": {
@@ -70,7 +71,7 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": false
+            "allow-contrib": true
         }
     }
 }
