@@ -74,6 +74,6 @@
             "allow-contrib": true
         }
     },
-    "minimum-stability": "beta",
-    "prefer-stable": false
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
