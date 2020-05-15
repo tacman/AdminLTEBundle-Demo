@@ -72,6 +72,7 @@ class MenuBuilderSubscriber implements EventSubscriberInterface
         );
         $event->addItem($demo);
 
+        /* @todo: replace with admin_lte */
         if ($this->security->isGranted('IS_AUTHENTICATED_REMEMBERED')) {
             $event->addItem(
                 new MenuItemModel('logout', 'menu.logout', 'fos_user_security_logout', [], 'fas fa-sign-out-alt')
