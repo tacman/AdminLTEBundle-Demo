@@ -1504,12 +1504,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tacman/AdminLTEBundle.git",
-                "reference": "54bb241db17b0902342519c0f48ed0ff560ad829"
+                "reference": "ed09f16e7a7d2dc24486fe89b11b233d04f0a446"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tacman/AdminLTEBundle/zipball/54bb241db17b0902342519c0f48ed0ff560ad829",
-                "reference": "54bb241db17b0902342519c0f48ed0ff560ad829",
+                "url": "https://api.github.com/repos/tacman/AdminLTEBundle/zipball/ed09f16e7a7d2dc24486fe89b11b233d04f0a446",
+                "reference": "ed09f16e7a7d2dc24486fe89b11b233d04f0a446",
                 "shasum": ""
             },
             "require": {
@@ -1548,7 +1548,8 @@
                     "vendor/bin/phpunit Tests/"
                 ],
                 "phpstan": [
-                    "vendor/bin/phpstan analyse . --level=5"
+                    "vendor/bin/phpstan analyse . --level=6",
+                    "vendor/bin/phpstan analyse -c Tests/phpstan.neon Tests --level=7"
                 ],
                 "codestyle": [
                     "vendor/bin/php-cs-fixer fix --dry-run --verbose --show-progress=none"
@@ -1574,7 +1575,7 @@
                     "homepage": "https://shakaran.net/blog"
                 }
             ],
-            "description": "Admin theme bundle for Symfony 4 based on AdminLTE 2.4.8 with FOSUserBundle support",
+            "description": "Admin theme bundle for Symfony 4+ based on AdminLTE 3 with FOSUserBundle and KNPMenu support",
             "support": {
                 "source": "https://github.com/tacman/AdminLTEBundle/tree/adminlte-v3"
             },
@@ -1584,7 +1585,7 @@
                     "url": "https://paypal.me/kevinpapst"
                 }
             ],
-            "time": "2020-05-20T18:47:13+00:00"
+            "time": "2020-08-24T13:14:16+00:00"
         },
         {
             "name": "knplabs/knp-menu",
