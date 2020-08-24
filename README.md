@@ -15,7 +15,6 @@ Symfony 4:
 composer create-project kevinpapst/adminlte-bundle-demo 
 ```
 
-<<<<<<< HEAD
 Symfony 5:
 
 ```bash
@@ -25,20 +24,17 @@ git checkout symfony5
 composer install && yarn install && yarn run encore dev
 ```
 
+I use the Symfony webserver, which is a great development tool, please read how to install it at:
+[https://symfony.com/doc/current/setup/symfony_server.html](https://symfony.com/doc/current/setup/symfony_server.html)
+
 Use the Symfony CLI to run a test server and to compile the assets in the background. Watch the assets in the background if you're going to change them.
 
 ```bash
 symfony server:start -d 
 symfony run -d yarn run encore dev --watch
-=======
-I use the Symfony webserver, which is a great development tool, please read how to install it at:
-[https://symfony.com/doc/current/setup/symfony_server.html](https://symfony.com/doc/current/setup/symfony_server.html)
-
-```bash
-cd adminlte-bundle-demo
-symfony serve
->>>>>>> adminlte-3
 ```
+
+
 
 and see it running at [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
