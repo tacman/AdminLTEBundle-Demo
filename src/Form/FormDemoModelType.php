@@ -146,7 +146,7 @@ class FormDemoModelType extends AbstractType
                 'required' => false,
             ])
             ->add('price', MoneyType::class, [
-                'label' => false,
+                'label' => 'Money',
                 'required' => false,
             ])
             ->add('password', PasswordType::class, [

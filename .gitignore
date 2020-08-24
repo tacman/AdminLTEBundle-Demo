@@ -6,12 +6,16 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
+<<<<<<< HEAD
 ###> friendsofphp/php-cs-fixer ###
 /.php_cs
 /.php_cs.cache
 ###< friendsofphp/php-cs-fixer ###
 
 ###> symfony/webpack-encore-bundle ###
+=======
+###> symfony/webpack-encore-pack ###
+>>>>>>> adminlte-3
 /node_modules/
 /public/build/
 npm-debug.log

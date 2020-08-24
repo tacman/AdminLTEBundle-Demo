@@ -65,12 +65,12 @@ class KnpMenuBuilderSubscriber implements EventSubscriberInterface
         $menu->addChild(
             'homepage',
             ['route' => 'homepage', 'label' => 'menu.homepage', 'childOptions' => $event->getChildOptions()]
-        )->setLabelAttribute('icon', 'fas fa-tachometer-alt');
+        )->setAttribute('icon', 'fas fa-tachometer-alt');
 
         $menu->addChild(
             'forms',
             ['route' => 'forms', 'label' => 'menu.form', 'childOptions' => $event->getChildOptions()]
-        )->setLabelAttribute('icon', 'fab fa-wpforms')->setExtra('badge', [
+        )->setAttribute('icon', 'fab fa-wpforms')->setExtra('badge', [
             'color' => 'red',
             'value' => 1,
         ]);
@@ -78,13 +78,13 @@ class KnpMenuBuilderSubscriber implements EventSubscriberInterface
         $menu->addChild(
             'context',
             ['route' => 'context', 'label' => 'AdminLTE context', 'childOptions' => $event->getChildOptions()]
-        )->setLabelAttribute('icon', 'fas fa-code');
+        )->setAttribute('icon', 'fas fa-code');
 
         $dropdown = $menu->addChild(
             'demo',
             ['label' => 'Dropdown Demo',
                 'childOptions' => $event->getChildOptions(), 'options' => ['branch_class' => 'treeview']]
-        )->setLabelAttribute('icon', 'far fa-arrow-alt-circle-right')->setExtra('badges', [
+        )->setAttribute('icon', 'far fa-arrow-alt-circle-right')->setExtra('badges', [
             ['value' => 2,],
             ['value' => 'foo', 'color' => 'yellow'],
         ]);
@@ -92,12 +92,12 @@ class KnpMenuBuilderSubscriber implements EventSubscriberInterface
         $dropdown->addChild(
             'sub-demo',
             ['route' => 'forms2', 'label' => 'Form - Horizontal', 'childOptions' => $event->getChildOptions()]
-        )->setLabelAttribute('icon', 'far fa-arrow-alt-circle-down');
+        )->setAttribute('icon', 'far fa-arrow-alt-circle-down');
 
         $dropdown->addChild(
             'sub-demo2',
             ['route' => 'forms3', 'label' => 'Form - Sidebar', 'childOptions' => $event->getChildOptions()]
-        )->setLabelAttribute('icon', 'far fa-arrow-alt-circle-up');
+        )->setAttribute('icon', 'far fa-arrow-alt-circle-up');
 
 
         // the security routes are defined in admin_lte.yaml
@@ -107,16 +107,16 @@ class KnpMenuBuilderSubscriber implements EventSubscriberInterface
             $menu->addChild(
                 'logout',
                 ['route' => 'app_logout', 'label' => 'menu.logout', 'childOptions' => $event->getChildOptions()]
-            )->setLabelAttribute('icon', 'fas fa-sign-out-alt');
+            )->setAttribute('icon', 'fas fa-sign-out-alt');
         } else {
             $menu->addChild(
                 'login',
                 ['route' => $routes['adminlte_login'], 'label' => 'menu.login', 'childOptions' => $event->getChildOptions()]
-            )->setLabelAttribute('icon', 'fas fa-sign-in-alt');
+            )->setAttribute('icon', 'fas fa-sign-in-alt');
             $menu->addChild(
                 'register',
                 ['route' => $routes['adminlte_registration'], 'label' => 'menu.register', 'childOptions' => $event->getChildOptions()]
-            )->setLabelAttribute('icon', 'fas fa-sign-in-alt');
+            )->setAttribute('icon', 'fas fa-sign-in-alt');
         }
     }
 }

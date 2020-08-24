@@ -1,4 +1,5 @@
 require('../vendor/kevinpapst/adminlte-bundle/Resources/assets/admin-lte');
+require('daterangepicker');
 
 $(document).ready(
     function ()

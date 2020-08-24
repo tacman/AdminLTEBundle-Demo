@@ -1,5 +1,6 @@
 {% extends '@AdminLTE/FOSUserBundle/Security/login.html.twig' %}
 
+<<<<<<< HEAD
 {% block logo_login %}
     <b>Demo</b> Login
 {% endblock %}
@@ -11,3 +12,6 @@
     {{ parent() }}
 {% endblock %}
 
+=======
+{% block logo_login %}<a href="{{ path('adminlte_welcome'|route_alias) }}"><b>Demo</b> Login</a>{% endblock %}
+>>>>>>> adminlte-3

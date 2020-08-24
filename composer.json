@@ -8,7 +8,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "doctrine/annotations": "^1.10",
-        "kevinpapst/adminlte-bundle": "dev-adminlte-v3.",
+        "kevinpapst/adminlte-bundle": "dev-adminlte-v3",
         "knplabs/knp-menu-bundle": "^3.0",
         "sensio/framework-extra-bundle": "^5.2",
         "symfony/asset": "^5.0",
@@ -16,15 +16,16 @@
         "symfony/flex": "^1.0",
         "symfony/form": "^5.0",
         "symfony/framework-bundle": "^5.0",
+        "symfony/mailer": "^5.0",
         "symfony/maker-bundle": "^1.15",
         "symfony/orm-pack": "^1.0",
         "symfony/security-bundle": "^5.0",
-        "symfony/swiftmailer-bundle": "^3.2",
         "symfony/translation": "^5.0",
         "symfony/twig-bundle": "^5.0",
         "symfony/validator": "^5.0",
         "symfony/webpack-encore-bundle": "^1.0",
-        "symfony/yaml": "^5.0"
+        "symfony/yaml": "^5.0",
+        "twig/extra-bundle": "^3.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.10",
@@ -67,7 +68,7 @@
         ]
     },
     "conflict": {
-        "symfony/symfony": "5.1"
+        "symfony/symfony": "5.0"
     },
     "extra": {
         "symfony": {
@@ -75,5 +76,11 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": {
+        "multisearch": {
+            "type": "vcs",
+            "url": "git@github.com:tacman/AdminLTEBundle.git"
+        }
+    }
 }

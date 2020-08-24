@@ -7,10 +7,13 @@
 admin_lte:
     options:
         default_avatar: bundles/adminlte/images/default_avatar.png
-#        fixed_layout: false
+        fixed_header: false
+        fixed_menu: false
+        fixed_footer: false
         boxed_layout: true
-        collapsed_sidebar: false
+        collapsed_sidebar: true
         mini_sidebar: true
+        form_theme: default
         #max_navbar_notifications: 10
         #max_navbar_tasks: 10
         #max_navbar_messages: 10
@@ -19,20 +22,19 @@ admin_lte:
         home:
             icon: fas fa-home
             template: control-sidebar/home.html.twig
-        settings:
-            icon: fas fa-cogs
-            controller: 'App\Controller\DefaultController::userPreferences'
+        #settings:
+        #    icon: fas fa-cogs
+        #    controller: 'App\Controller\DefaultController::userPreferences'
 
-#    theme:
-#        widget:
-#            type: warning
-#            bordered: true
+    theme:
+        widget:
+            type:
 #            collapsible: true
 #            collapsible_title: 'Collapse'
 #            removable: false
 #            removable_title: 'Remove'
 #            solid: false
-#            use_footer: false
+
 #        button:
 #            type: 'primary'
 #            size: false
@@ -40,16 +42,19 @@ admin_lte:
     knp_menu:
         enable: true
         # the default value is adminlte_main, so we don't need to set it manually
-        # main_menu: admin_menu
+        #main_menu: adminlte_main
         breadcrumb_menu: true
 
     routes:
         adminlte_welcome: homepage
         adminlte_login: app_login
+        adminlte_login_check: fos_user_security_check
+        adminlte_registration: fos_user_registration_register
+        adminlte_password_reset: fos_user_resetting_request
         adminlte_message: homepage
         adminlte_messages: homepage
         adminlte_notification: homepage
         adminlte_notifications: homepage
         adminlte_task: homepage
-        adminlte_profile: app_profile
         adminlte_tasks: homepage
+        adminlte_profile: fos_user_profile_show

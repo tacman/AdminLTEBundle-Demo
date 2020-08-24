@@ -3,6 +3,8 @@ var Encore = require('@symfony/webpack-encore');
 Encore
 // the project directory where compiled assets will be stored
     // .setOutputPath('public/bundles/adminlte/')
+    // the project directory where compiled assets will be stored
+    .setOutputPath('public/bundles/adminlte-demo/')
 
     // the public path used by the web server to access the previous directory
     // .setPublicPath('/bundles/adminlte/')
@@ -30,7 +32,7 @@ Encore
     .cleanupOutputBeforeBuild()
 
     // for "legacy" applications that require $/jQuery as a global variable
-    .autoProvidejQuery()
+    // .autoProvidejQuery()
 
     // see https://symfony.com/doc/current/frontend/encore/bootstrap.html
     .enableSassLoader(function(sassOptions) {}, {
